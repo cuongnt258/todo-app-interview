@@ -1,16 +1,16 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from '@reduxjs/toolkit';
 
-import type { TaskState } from "./type";
+import type {TaskState} from './type';
 
 const initialState: TaskState = {
-  projectId: "",
+  projectId: '',
   isLoading: false,
   tasks: [],
   error: null,
 };
 
 const taskSlice = createSlice({
-  name: "project",
+  name: 'project',
   initialState,
   reducers: {},
 });

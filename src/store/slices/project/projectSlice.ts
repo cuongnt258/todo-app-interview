@@ -1,6 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from '@reduxjs/toolkit';
 
-import type { ProjectState } from "./type";
+import type {ProjectState} from './type';
 
 const initialState: ProjectState = {
   isLoading: false,
@@ -9,7 +9,7 @@ const initialState: ProjectState = {
 };
 
 const projectSlice = createSlice({
-  name: "project",
+  name: 'project',
   initialState,
   reducers: {},
 });
