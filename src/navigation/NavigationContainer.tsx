@@ -1,10 +1,10 @@
 import React, {ReactNode} from 'react';
-
 import {
   NavigationContainer as RNNavigationContainer,
   useNavigationContainerRef,
 } from '@react-navigation/native';
-import {RootStackParamList} from '../constants/Navigation';
+
+import type {RootStackParamList} from '../constants/Navigation';
 
 type Props = {
   children: ReactNode;

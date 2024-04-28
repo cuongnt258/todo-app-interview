@@ -2,7 +2,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import * as React from 'react';
 import Icon from 'react-native-vector-icons/Feather';
 
-import {MainStackParamList} from '../constants/Navigation';
+import type {MainStackParamList} from '../constants/Navigation';
 
 import {DashboardScreen, TodoScreen} from '../screens';
 
