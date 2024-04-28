@@ -1,4 +1,4 @@
-import {RootStackParamList} from '../constants/Navigation';
+import { RootStackParamList } from "@constants/Navigation";
 
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace

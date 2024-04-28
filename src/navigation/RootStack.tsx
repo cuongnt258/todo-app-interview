@@ -1,10 +1,12 @@
-import {createStackNavigator} from '@react-navigation/stack';
-import React from 'react';
+import React from "react";
 
-import type {RootStackParamList} from '../constants/Navigation';
+import { createStackNavigator } from "@react-navigation/stack";
 
-import SplashScreen from '../screens/SplashScreen';
-import MainStack from './MainStack';
+import type { RootStackParamList } from "@constants/Navigation";
+
+import SplashScreen from "@screens/SplashScreen";
+
+import MainStack from "./MainStack";
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -12,7 +14,8 @@ const RootStack = () => {
   return (
     <Stack.Navigator
       initialRouteName="Splash"
-      screenOptions={{headerShown: false}}>
+      screenOptions={{ headerShown: false }}
+    >
       <Stack.Screen name="Splash" component={SplashScreen} />
       <Stack.Screen name="Main" component={MainStack} />
     </Stack.Navigator>

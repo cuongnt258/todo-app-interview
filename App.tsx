@@ -4,12 +4,11 @@
  *
  * @format
  */
+import React from "react";
+import { Provider } from "react-redux";
 
-import React from 'react';
-import {Provider} from 'react-redux';
-
-import {NavigationContainer, RootStack} from './src/navigation';
-import store from './src/store';
+import { NavigationContainer, RootStack } from "./src/navigation";
+import store from "./src/store";
 
 function App(): React.JSX.Element {
   return (

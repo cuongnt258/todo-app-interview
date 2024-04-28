@@ -1,20 +1,20 @@
-import {Task} from '../task/type';
+import { Task } from "../task/type";
 
 export enum ViewMode {
-  List = 'list',
-  Kanban = 'kanban',
-  Timeline = 'timeline',
+  List = "list",
+  Kanban = "kanban",
+  Timeline = "timeline",
 }
 
 export enum Permission {
-  Read = 'read',
-  Write = 'write',
-  Comment = 'comment',
+  Read = "read",
+  Write = "write",
+  Comment = "comment",
 }
 
 export enum Kind {
-  Task = 'TASK',
-  Note = 'NOTE',
+  Task = "TASK",
+  Note = "NOTE",
 }
 
 export type ProjectState = {

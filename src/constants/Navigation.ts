@@ -1,4 +1,4 @@
-import {NavigatorScreenParams, PathConfigMap} from '@react-navigation/native';
+import { NavigatorScreenParams, PathConfigMap } from "@react-navigation/native";
 
 export const SCREENS = {} as const satisfies {
   [key: string]: React.ComponentType<{}> & {
@@ -14,7 +14,7 @@ export type MainStackParamList = {
 };
 
 type ExampleScreensParamList = {
-  [Key in keyof typeof SCREENS]: (typeof SCREENS)[Key]['linking'] extends PathConfigMap<
+  [Key in keyof typeof SCREENS]: (typeof SCREENS)[Key]["linking"] extends PathConfigMap<
     infer P
   >
     ? NavigatorScreenParams<P> | undefined
