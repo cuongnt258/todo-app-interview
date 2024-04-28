@@ -1,1 +1,1 @@
-export {default as TaskReducer} from './taskSlice';
+export { default as TaskReducer } from "./taskSlice";

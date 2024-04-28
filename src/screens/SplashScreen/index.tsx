@@ -1,13 +1,14 @@
-import {StackScreenProps} from '@react-navigation/stack';
-import React, {FC, useEffect} from 'react';
+import React, { FC, useEffect } from "react";
 
-import type {RootStackParamList} from '../../constants/Navigation';
+import { StackScreenProps } from "@react-navigation/stack";
 
-const SplashScreen: FC<StackScreenProps<RootStackParamList, 'Splash'>> = ({
+import type { RootStackParamList } from "@constants/Navigation";
+
+const SplashScreen: FC<StackScreenProps<RootStackParamList, "Splash">> = ({
   navigation,
 }) => {
   useEffect(() => {
-    navigation.replace('Main');
+    navigation.replace("Main");
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
