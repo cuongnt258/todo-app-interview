@@ -22,6 +22,6 @@ type ExampleScreensParamList = {
 };
 
 export type RootStackParamList = ExampleScreensParamList & {
-  Auth: undefined;
+  Splash: undefined;
   Main: NavigatorScreenParams<MainStackParamList> | undefined;
 };
