@@ -1,5 +1,8 @@
 import { NavigatorScreenParams, PathConfigMap } from "@react-navigation/native";
 
+import { Project } from "@models/Project";
+import { Task } from "@models/Task";
+
 export const SCREENS = {} as const satisfies {
   [key: string]: React.ComponentType<{}> & {
     title: string;
@@ -9,8 +12,20 @@ export const SCREENS = {} as const satisfies {
 };
 
 export type MainStackParamList = {
-  Dashboard: undefined;
+  Inbox: undefined;
   Todo: undefined;
+  TaskForm: {
+    task?: Task;
+    project?: Project;
+    childOrder?: number;
+  };
+  ProjectForm: {
+    project?: Project;
+    childOrder?: number;
+  };
+  Project: {
+    project: Project;
+  };
 };
 
 type ExampleScreensParamList = {
@@ -23,5 +38,5 @@ type ExampleScreensParamList = {
 
 export type RootStackParamList = ExampleScreensParamList & {
   Splash: undefined;
-  Main: NavigatorScreenParams<MainStackParamList> | undefined;
+  MainStack: NavigatorScreenParams<MainStackParamList> | undefined;
 };
