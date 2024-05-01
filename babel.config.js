@@ -25,6 +25,9 @@ module.exports = {
             "@hooks": "./src/hooks",
           },
           {
+            "@models": "./src/models",
+          },
+          {
             "@navigation": "./src/navigation",
           },
           {

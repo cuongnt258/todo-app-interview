@@ -58,6 +58,12 @@
 			"@hooks/*": [
 				"./hooks/*"
 			],
+			"@models": [
+				"./models"
+			],
+			"@models/*": [
+				"./models/*"
+			],
 			"@navigation": [
 				"./navigation"
 			],
